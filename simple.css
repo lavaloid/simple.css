@@ -64,7 +64,11 @@ progress {
 html {
   /* Set the font globally */
   font-family: var(--sans-font);
-  scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Make the body a nice central block */
